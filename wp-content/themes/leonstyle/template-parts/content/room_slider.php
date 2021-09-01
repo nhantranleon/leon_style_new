@@ -6,7 +6,7 @@
         </div>
         <div class="col-md-10">
             <div class="slider">
-                <div class="slider-for mb-4">
+                <div class="slider-for">
                     <?php
                         $rooms = new WP_Query( array(
                             'post_type' => 'room'

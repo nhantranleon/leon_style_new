@@ -28,15 +28,19 @@
             <div class="col-md-4">
                 <div class="vertically-center h-100">
                     <p class="slogan">
-                        <?php bloginfo('description'); ?>
-                    </p>
+                        <?php 
+						$args = array(
+							'name' => array(
+								'post',
+							),
+						);
+						$taxonomies = get_taxonomies( $args ); ?>
+                    </p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="vertically-center h-100 flex-end">
-                    <div class="text-end">
-                        <?php echo do_shortcode ("[addtoany]"); ?>
-                    </div>
+                    <div class="text-end"><?php echo do_shortcode ("[addtoany]"); ?></div>
                 </div>
             </div>
         </div>

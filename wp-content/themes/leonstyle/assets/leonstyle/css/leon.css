@@ -1,6 +1,9 @@
-
 .w-50-px {
     width: 50px;
+}
+
+.slick-for {
+	margin-bottom: 0px !important;
 }
 
 .slider-for img.item {
@@ -9,9 +12,17 @@
     object-fit: cover;
 }
 
+.slider-nav > .slick-list {
+	margin: 0 40px;
+}
+
 .slider-nav img.item {
    height: 200px;
    object-fit: cover;
+}
+
+.slider-nav img.item.slick-slide {
+	padding: 20px 10px ;
 }
 
 .w-10-px {
