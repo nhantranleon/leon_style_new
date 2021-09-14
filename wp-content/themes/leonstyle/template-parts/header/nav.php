@@ -26,15 +26,9 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="vertically-center h-100">
+                <div class="vertically-center h-100 123">
                     <p class="slogan">
-                        <?php 
-						$args = array(
-							'name' => array(
-								'post',
-							),
-						);
-						$taxonomies = get_taxonomies( $args ); ?>
+                        <?php bloginfo('description'); ?>
                     </p>
                 </div>
             </div>
