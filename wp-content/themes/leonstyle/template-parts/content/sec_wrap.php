@@ -7,18 +7,18 @@
             </div> 
             <div class="slider-wrap fade-box">
                 <div class="slider-for">
-                        <figure><a href="images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="images/room/img_room1.jpg" alt=""></a></figure>
-                        <figure><a href="images/room/img_exterior.png" rel="lightbox[b-group]"><img src="images/room/img_exterior.png" alt=""></a></figure>
-                        <figure><a href="images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="images/room/img_room1.jpg" alt=""></a></figure>
-                        <figure><a href="images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="images/room/img_room1.jpg" alt=""></a></figure>
-                        <figure><a href="images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="images/room/img_room1.jpg" alt=""></a></figure>
+                        <figure><a href="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></a></figure>
+                        <figure><a href="<?php echo get_template_directory_uri();?>/images/room/img_exterior.png" rel="lightbox[b-group]"><img src="<?php echo get_template_directory_uri();?>/images/room/img_exterior.png" alt=""></a></figure>
+                        <figure><a href="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></a></figure>
+                        <figure><a href="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></a></figure>
+                        <figure><a href="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" rel="lightbox[b-group]"><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></a></figure>
                 </div>
                 <div class="slider-nav">
-                        <figure><img src="images/room/img_room1.jpg" alt=""></figure>
-                        <figure><img src="images/room/img_exterior.png" alt=""></figure>
-                        <figure><img src="images/room/img_room1.jpg" alt=""></figure>
-                        <figure><img src="images/room/img_room1.jpg" alt=""></figure>
-                        <figure><img src="images/room/img_room1.jpg" alt=""></figure>
+                        <figure><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></figure>
+                        <figure><img src="<?php echo get_template_directory_uri();?>/images/room/img_exterior.png" alt=""></figure>
+                        <figure><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></figure>
+                        <figure><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></figure>
+                        <figure><img src="<?php echo get_template_directory_uri();?>/images/room/img_room1.jpg" alt=""></figure>
                 </div>
             </div><!-- slider-wrap -->
         </section><!--　exterior-area　-->
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             <figure>
-                                <img src="images/room/img_station1.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/images/room/img_station1.png" alt="">
                             </figure>
                         </div><!-- item -->
                         <div class="item">
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <figure>
-                                <img src="images/room/img_station2.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/images/room/img_station2.png" alt="">
                             </figure>
                         </div><!-- item -->
                     </div>

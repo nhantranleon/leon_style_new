@@ -121,13 +121,13 @@ figure {
 	background-color: #333;
 }
 .btn .blank:after {
-	content: url("../images/common/icon_blank.svg");
+	content: url("../../../images/common/icon_blank.svg");
 	position: relative;
 	top: 2px;
 	right: -20px;
 }
 .btn .download:after {
-	content: url("../images/common/icon_dl.svg");
+	content: url("../../../images/common/icon_dl.svg");
 	position: relative;
 	top: 2px;
 	right: -3px;
@@ -240,19 +240,19 @@ a:hover > .anim:after {
 /* =====================
   fade
 ===================== */
-.fade-box {
-    visibility: hidden;
-}
-.fade {
-    animation-fill-mode: both;
-    animation-duration: 1s;
-    animation-name: fade;
-    visibility: visible !important;
-}
-@keyframes fade {
-    0% { opacity: 0; transform: translateY(40px);}
-    100% { opacity: 1; transform: translateY(0);}
-}
+/*.fade-box {*/
+/*    visibility: hidden;*/
+/*}*/
+/*.fade {*/
+/*    animation-fill-mode: both;*/
+/*    animation-duration: 1s;*/
+/*    animation-name: fade;*/
+/*    visibility: visible !important;*/
+/*}*/
+/*@keyframes fade {*/
+/*    0% { opacity: 0; transform: translateY(40px);}*/
+/*    100% { opacity: 1; transform: translateY(0);}*/
+/*}*/
 
 
 /* =====================
