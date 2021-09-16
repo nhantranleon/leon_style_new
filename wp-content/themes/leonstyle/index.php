@@ -8,6 +8,9 @@
 get_header();
 ?>
     <main class="">
+		<?php 
+		get_template_part('/template-parts/content/room_slider') 
+		?>
 		<?php get_template_part('/template-parts/content/interior-area') ?>
 		<?php get_template_part('/template-parts/content/sec_wrap') ?> 
 		<?php get_template_part('/template-parts/content/room_area') ?> 

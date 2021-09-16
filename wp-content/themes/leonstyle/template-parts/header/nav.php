@@ -28,7 +28,10 @@
             <div class="col-md-4">
                 <div class="vertically-center h-100 123">
                     <p class="slogan">
-                        <?php bloginfo('description'); ?>
+                        <?php 
+						//bloginfo('description'); 
+						?>
+						<?php echo get_the_title(34); ?>
                     </p>
                 </div>
             </div>
