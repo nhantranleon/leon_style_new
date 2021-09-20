@@ -11,7 +11,7 @@ get_header();
 		<?php 
 		get_template_part('/template-parts/content/room_slider') 
 		?>
-		<?php get_template_part('/template-parts/content/interior-area') ?>
+		<!-- <?php get_template_part('/template-parts/content/interior-area') ?> -->
 		<?php get_template_part('/template-parts/content/sec_wrap') ?> 
 		<?php get_template_part('/template-parts/content/room_area') ?> 
 		<?php get_template_part('/template-parts/content/map_area') ?> 
