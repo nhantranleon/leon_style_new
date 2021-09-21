@@ -14,7 +14,6 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<h1>askdfasifa0sfkashfksaf</h1>
 			<?php
 
 			// Start the Loop.

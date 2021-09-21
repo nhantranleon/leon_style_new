@@ -42,6 +42,8 @@ class Assets
         wp_register_style( 'leon-style-7', get_theme_file_uri('/assets/leonstyle/css/common.css'), array(), false, 'all');
         wp_register_style( 'leon-style-8', get_theme_file_uri('/assets/leonstyle/css/nav.css'), array(), false, 'all');
         wp_register_style( 'leon-style-9', get_theme_file_uri('/assets/leonstyle/css/room.css'), array(), false, 'all');
+        wp_register_style( 'leon-style-10', get_theme_file_uri('/assets/leonstyle/css/index.css'), array(), false, 'all');
+        wp_register_style( 'leon-style-11', get_theme_file_uri('/assets/leonstyle/css/policy.css'), array(), false, 'all');
 
 //         wp_enqueue_style('bootstrap-style');
 //         wp_enqueue_style('slick-style');
@@ -57,6 +59,8 @@ class Assets
         wp_enqueue_style('leon-style-7');
         wp_enqueue_style('leon-style-8');
         wp_enqueue_style('leon-style-9');
+        wp_enqueue_style('leon-style-10');
+        wp_enqueue_style('leon-style-11');
     }
 
     /**
@@ -73,22 +77,17 @@ class Assets
 		wp_register_script( 'type-kick', 'https://use.typekit.net/fya1swr.js', array(), false, true );
         wp_register_script( 'jquery-min', get_theme_file_uri( '/assets/leonstyle/js/jquery-2.2.4.min.js' ), array('type-kick'), false, true );
         wp_register_script( 'slick-script', get_theme_file_uri( '/assets/leonstyle/plugin/slick/slick.min.js' ), array('jquery-min'), false, true );
-//         wp_register_script( 'slick-script', get_theme_file_uri( '/assets/leonstyle/plugin/slick/slick.min.js' ), array('jquery-min'), false, true );
-        wp_register_script( 'leon-script', get_theme_file_uri( '/assets/leonstyle/js/lightbox.min.js' ), array('slick-script'), filemtime(get_template_directory( '/assets/leonstyle/js/lightbox.min.js' )), true );
-		
-		wp_register_script( 'leon-script-1', get_theme_file_uri( '/assets/leonstyle/js/common.js' ), array('leon-script'), filemtime(get_template_directory( '/assets/leonstyle/js/common.js' )), true );
-		wp_register_script( 'leon-script-2', get_theme_file_uri( '/assets/leonstyle/js/room.js' ), array('leon-script-1'), filemtime(get_template_directory( '/assets/leonstyle/js/room.js' )), true );
+        wp_register_script( 'leon-script-lightbox', get_theme_file_uri( '/assets/leonstyle/js/lightbox.min.js' ), array('slick-script'), filemtime(get_template_directory( '/assets/leonstyle/js/lightbox.min.js' )), true );
+		wp_register_script( 'leon-script-common', get_theme_file_uri( '/assets/leonstyle/js/common.js' ), array('leon-script-lightbox'), filemtime(get_template_directory( '/assets/leonstyle/js/common.js' )), true );
+		wp_register_script( 'leon-script-room', get_theme_file_uri( '/assets/leonstyle/js/room.js' ), array('leon-script-common'), filemtime(get_template_directory( '/assets/leonstyle/js/room.js' )), true );
+		wp_register_script( 'leon-script-index', get_theme_file_uri( '/assets/leonstyle/js/index.js' ), array('leon-script-room'), filemtime(get_template_directory( '/assets/leonstyle/js/room.js' )), true );
     
-//         wp_enqueue_script('bootstrap-script');
-//         wp_enqueue_script('slick-script');
-//         wp_enqueue_script('leon-script');
-//         wp_enqueue_script('type-kick');
         wp_enqueue_script('type-kick');
         wp_enqueue_script('jquery-min');
         wp_enqueue_script('slick-script');
-        wp_enqueue_script('leon-script');
-		
-        wp_enqueue_script('leon-script-1');
-        wp_enqueue_script('leon-script-2');
+        wp_enqueue_script('leon-script-lightbox');
+        wp_enqueue_script('leon-script-common');
+        wp_enqueue_script('leon-script-room');
+        wp_enqueue_script('leon-script-index');
     }
 }
