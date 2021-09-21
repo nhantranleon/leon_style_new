@@ -8,15 +8,11 @@
 get_header();
 ?>
     <main class="">
-		<?php 
-		get_template_part('/template-parts/content/room_slider') 
-		?>
-		<!-- <?php get_template_part('/template-parts/content/interior-area') ?> -->
-		<?php get_template_part('/template-parts/content/sec_wrap') ?> 
-		<?php get_template_part('/template-parts/content/room_area') ?> 
-		<?php get_template_part('/template-parts/content/map_area') ?> 
-		<?php get_template_part('/template-parts/content/movie_area') ?> 
-		<?php get_template_part('/template-parts/content/contact_area') ?> 
+		<?php get_template_part('/template-parts/page/mv_area')?>
+		<?php get_template_part('/template-parts/page/concept_area')?>
+		<?php get_template_part('/template-parts/page/home_movie_area')?>
+		<?php get_template_part('/template-parts/page/home_room_area')?>
+		<?php get_template_part('/template-parts/page/home_news_area')?>
     </main>
 </div>
 
