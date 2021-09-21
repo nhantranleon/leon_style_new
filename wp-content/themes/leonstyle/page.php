@@ -70,25 +70,25 @@
                             <h3 class="sec-ttl">物件一覧</h3>
                             <div class="search">
                                 <p>物件を探す</p>
-                                <select name="" id="">
+                                <!-- <select name="" id=""> -->
+                                <select name="custompost-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> 
                                     <?php
                                     $property = new WP_Query(array(
                                         'post_type' => 'property'
                                     ));
                                     if ($property->have_posts()) {
-                                        while ($property->have_posts()) {
                                             $property->the_post();
                                             $titles = get_children(array(
                                                 'post_type' => 'property'
                                             ));
-
+                                            $selectId = "https://www.youtube.com/";
                                             if ($titles) {
                                                 foreach ($titles as $title) {
-                                                    echo '<option value=' . $title->post_title . '>' . $title->post_title . '</option>';
+                                                    echo '<option value=' . $selectId . '>' . $title->post_title . '</option>';
                                                 }
                                             }
-                                        }
                                     }
+                                    wp_reset_postdata();
                                     ?>
 
                                 </select>
@@ -110,7 +110,6 @@
                                         $titles = get_children(array(
                                             'post_parent' => get_the_ID(),
                                             'post_type' => 'attachment',
-
                                         ));
 
                                         if ($titles) {
