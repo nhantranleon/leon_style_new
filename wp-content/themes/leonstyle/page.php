@@ -81,14 +81,14 @@
                                             $titles = get_children(array(
                                                 'post_type' => 'property'
                                             ));
-                                            $selectId = "https://www.youtube.com/";
+                                            $selectId = "";
                                             if ($titles) {
                                                 foreach ($titles as $title) {
-                                                    echo '<option value=' . $selectId . '>' . $title->post_title . '</option>';
+                                                    echo '<option value=' . $title->post_title . '>' . $title->post_title . '</option>';
                                                 }
                                             }
                                     }
-                                    wp_reset_postdata();
+                                    
                                     ?>
 
                                 </select>
@@ -104,7 +104,9 @@
                                 $property = new WP_Query(array(
                                     'post_type' => 'property',
                                 ));
+                                
                                 if ($property->have_posts()) {
+                                   
                                     while ($property->have_posts()) {
                                         $property->the_post();
                                         $titles = get_children(array(
