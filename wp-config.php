@@ -24,10 +24,10 @@ define( 'WP_CACHE', false );
 define( 'DB_NAME', 'oceanvie_style' );
 
 /** MySQL database username */
-define( 'DB_USER', 'oceanvie_style' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'leonstyle123' );
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
